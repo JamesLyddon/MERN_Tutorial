@@ -122,6 +122,11 @@ div.error {
   border-radius: 4px;
   margin: 20px 0;
 }
+input.error {
+  border: 0.5rem solid #1b263b;
+  outline: 0.1rem solid var(--error);
+}
+
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
