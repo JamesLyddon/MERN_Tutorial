@@ -30,7 +30,7 @@ const createWorkout = async (request, response) => {
         const workout = await Workout.create({title, load, reps})
         response.status(200).json(workout)
     } catch(error) {
-        response.status(400).json({error: error})
+        response.status(400).json({error: error.message})
     }
 }
 

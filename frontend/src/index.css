@@ -7,13 +7,14 @@
   --error: #e7195a;
 }
 body {
-  background: #2c2c2c;
+  background: #1b263b;
   margin: 0;
   font-family: "Poppins";
-  color: whitesmoke;
+  color: #f4f1de;
 }
 header {
-  background: #1c1c1c;
+  background: #0d1b2a;
+  box-shadow: 4px 4px 5px rgba(0,0,0,0.7);
 }
 header .container {
   max-width: 1400px;
@@ -24,7 +25,7 @@ header .container {
   justify-content: space-between;
 }
 header a {
-  color: whitesmoke;
+  color: #ffc857;
   text-decoration: none;
 }
 .pages{
@@ -33,6 +34,94 @@ header a {
   margin: 0 auto;
 }
 
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+  color: #3e5c76;
+
+}
+.workout-details {
+  background: #0d1b2a;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 4px 4px 5px rgba(0,0,0,0.7);
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #ffc857;
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #f4f1de;
+}
+.workout-details strong {
+  color: #3e5c76;
+}
+
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* new workout form */
+.create {
+  background: #0d1b2a;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  width: 300px;
+  max-height: 500px;
+  box-shadow: 4px 4px 5px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.create h3 {
+  color: #ffc857;
+  justify-self: flex-start;
+}
+
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: #ffc857;
+  border: 0;
+  color: #1b263b;
+  font-weight: 500;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  right: 0;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
